@@ -30,10 +30,10 @@ namespace OOPLab2.Figures
         public override Shape Draw()
         {
             System.Windows.Shapes.Ellipse ellipse = new System.Windows.Shapes.Ellipse();
-            ellipse.Width = MinorAxis * 2;
-            ellipse.Height = MajorAxis * 2;
-            Canvas.SetLeft(ellipse, Center.x);
-            Canvas.SetTop(ellipse, Center.y);
+            ellipse.Width = MajorAxis * 2;
+            ellipse.Height = MinorAxis * 2;
+            Canvas.SetLeft(ellipse, Center.x - MajorAxis);
+            Canvas.SetTop(ellipse, Center.y - MinorAxis);
             ellipse.Stroke = Brushes.Black;
             return ellipse;
         }
