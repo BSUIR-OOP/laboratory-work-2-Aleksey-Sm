@@ -6,7 +6,41 @@
         xmlns:local="clr-namespace:OOPLab2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <Canvas Margin="-1,0,1,0" x:Name="Canv">
+        <Label Content="Figure" Canvas.Left="10" Canvas.Top="6"></Label>
+        <ComboBox x:Name="CBFigureList" Height="30" VerticalAlignment="Center" 
+                  Canvas.Left="10" Canvas.Top="32" Width="192" HorizontalAlignment="Left">
+            <TextBlock>Line</TextBlock>
+            <TextBlock>Triangle</TextBlock>
+            <TextBlock>Rectangle</TextBlock>
+            <TextBlock>Square</TextBlock>
+            <TextBlock>Circle</TextBlock>
+            <TextBlock>Ellipse</TextBlock>
+        </ComboBox>
+        <TextBox x:Name="AxInput" HorizontalAlignment="Left" VerticalAlignment="Center" Width="22" Canvas.Left="10" Canvas.Top="85"></TextBox>
+        <TextBox x:Name="AyInput" Width="22" Canvas.Left="43" Canvas.Top="85" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="BxInput" Width="22" Canvas.Left="78" Canvas.Top="85" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="ByInput" Width="22" Canvas.Left="114" Canvas.Top="85" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="CxInput" Width="22" Canvas.Left="147" Canvas.Top="85" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="CyInput" Width="22" Canvas.Left="180" Canvas.Top="85" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="A.x" Canvas.Left="8" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="A.y" Canvas.Left="41" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="B.x" Canvas.Left="76" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="B.y" Canvas.Left="112" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="C.x" Canvas.Left="145" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="C.y" Canvas.Left="178" Canvas.Top="62" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="MajorAxisInput"  Width="90" Canvas.Left="10" Canvas.Top="130" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="" Canvas.Left="8" Canvas.Top="104" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="MinorAxisInput" Width="90" Canvas.Left="112" Canvas.Top="130" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="MajorAxis" Canvas.Left="8" Canvas.Top="103" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="MinorAxis" Canvas.Left="110" Canvas.Top="103" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="RadiusInput" Width="57" Canvas.Left="10" Canvas.Top="171" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="LengthInput" Width="57" Canvas.Left="80" Canvas.Top="171" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="WidthInput" Width="57" Canvas.Left="147" Canvas.Top="171" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Radius" Canvas.Left="8" Canvas.Top="148" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Length" Canvas.Left="78" Canvas.Top="148" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Width" Canvas.Left="142" Canvas.Top="148" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Content="Draw" Canvas.Left="10" Canvas.Top="197" HorizontalAlignment="Left" VerticalAlignment="Center" Width="194" Click="Button_Click"/>
+        <Border BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Center" Canvas.Left="225" VerticalAlignment="Top" Height="434" Width="1"/>
+    </Canvas>
 </Window>

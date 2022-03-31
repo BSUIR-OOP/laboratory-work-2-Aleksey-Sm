@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
+using System.Windows.Media;
+using System.Windows.Shapes;
 
-namespace OOPLab2.Shapes
+namespace OOPLab2.Figures
 {
     public class Ellipse: BaseFigure
     {
@@ -23,5 +26,16 @@ namespace OOPLab2.Shapes
 
         public override string ToString()
             => $"Ellipse: Center({Center.x}, {Center.y}), MajorAxis = {MajorAxis}, MinorAxis = {MinorAxis}";
+
+        public override Shape Draw()
+        {
+            System.Windows.Shapes.Ellipse ellipse = new System.Windows.Shapes.Ellipse();
+            ellipse.Width = MinorAxis * 2;
+            ellipse.Height = MajorAxis * 2;
+            Canvas.SetLeft(ellipse, Center.x);
+            Canvas.SetTop(ellipse, Center.y);
+            ellipse.Stroke = Brushes.Black;
+            return ellipse;
+        }
     }
 }

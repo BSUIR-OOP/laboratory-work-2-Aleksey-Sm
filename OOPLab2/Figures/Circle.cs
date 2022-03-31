@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPLab2.Shapes
+namespace OOPLab2.Figures
 {
     public class Circle: Ellipse
     {
@@ -16,5 +16,10 @@ namespace OOPLab2.Shapes
 
         public override string ToString()
             => $"Circle: Center({Center.x}, {Center.y}), Radius = {MajorAxis}";
+
+        public override System.Windows.Shapes.Shape Draw()
+        {
+            return base.Draw();
+        }
     }
 }

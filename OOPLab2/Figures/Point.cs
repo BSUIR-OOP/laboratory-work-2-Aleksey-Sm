@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPLab2.Shapes
+namespace OOPLab2.Figures
 {
     public class Point
     {

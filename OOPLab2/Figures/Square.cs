@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPLab2.Shapes
+namespace OOPLab2.Figures
 {
     public class Square: Rectangle
     {
@@ -15,6 +15,11 @@ namespace OOPLab2.Shapes
         }
 
         public override string ToString()
-            => $"Square: A({A.x}, {A.y}); B({A.x + Width}, {A.y}); C({A.x + Width}, {A.y + Height}); D({A.x}, {A.y + Height});";
+            => $"Square: A({A.x}, {A.y}); B({A.x + Width}, {A.y}); C({A.x + Width}, {A.y + Length}); D({A.x}, {A.y + Length});";
+
+        public override System.Windows.Shapes.Shape Draw()
+        {
+            return base.Draw();
+        }
     }
 }
