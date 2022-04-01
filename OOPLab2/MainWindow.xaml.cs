@@ -30,6 +30,11 @@ namespace OOPLab2
         {
             int canvasLeft = 225;
             TextBlock selectedItem = (TextBlock)CBFigureList.SelectedItem;
+            if (selectedItem == null)
+            {
+                MessageBox.Show("You didn't choose a shape");
+                return;
+            }
             BaseFigure figure;
             switch (selectedItem.Text)
             {
@@ -71,7 +76,7 @@ namespace OOPLab2
                     Canv.Children.Add(figure.Draw());
                     break;
             }
-
         }
     }
 }
+
