@@ -18,8 +18,6 @@ namespace OOPLab2.Figures
             => $"Circle: Center({Center.x}, {Center.y}), Radius = {MajorAxis}";
 
         public override System.Windows.Shapes.Shape Draw()
-        {
-            return base.Draw();
-        }
+            => base.Draw();
     }
 }

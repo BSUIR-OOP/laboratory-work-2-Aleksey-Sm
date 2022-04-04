@@ -9,8 +9,9 @@ namespace OOPLab2.Figures
 {
     public abstract class BaseFigure
     {
-        public abstract override string ToString();
+        protected const int canvasLeft = 225;
 
+        public abstract override string ToString();
 
         public abstract Shape Draw();
     }

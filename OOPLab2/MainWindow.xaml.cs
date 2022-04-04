@@ -28,7 +28,6 @@ namespace OOPLab2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int canvasLeft = 225;
             TextBlock selectedItem = (TextBlock)CBFigureList.SelectedItem;
             if (selectedItem == null)
             {
@@ -40,38 +39,38 @@ namespace OOPLab2
             {
                 case "Line":
                     figure = new OOPLab2.Figures.Line(
-                        new OOPLab2.Figures.Point(int.Parse(AxInput.Text) + canvasLeft, int.Parse(AyInput.Text)),
-                        new OOPLab2.Figures.Point(int.Parse(BxInput.Text) + canvasLeft, int.Parse(ByInput.Text)));
+                        new OOPLab2.Figures.Point(int.Parse(AxInput.Text), int.Parse(AyInput.Text)),
+                        new OOPLab2.Figures.Point(int.Parse(BxInput.Text), int.Parse(ByInput.Text)));
                     Canv.Children.Add(figure.Draw());
                     break;
                 case "Triangle":
                     figure = new OOPLab2.Figures.Triangle(
-                        new OOPLab2.Figures.Point(int.Parse(AxInput.Text) + canvasLeft, int.Parse(AyInput.Text)),
-                        new OOPLab2.Figures.Point(int.Parse(BxInput.Text) + canvasLeft, int.Parse(ByInput.Text)),
-                        new OOPLab2.Figures.Point(int.Parse(CxInput.Text) + canvasLeft, int.Parse(CyInput.Text)));
+                        new OOPLab2.Figures.Point(int.Parse(AxInput.Text), int.Parse(AyInput.Text)),
+                        new OOPLab2.Figures.Point(int.Parse(BxInput.Text), int.Parse(ByInput.Text)),
+                        new OOPLab2.Figures.Point(int.Parse(CxInput.Text), int.Parse(CyInput.Text)));
                     Canv.Children.Add(figure.Draw());
                     break;
                 case "Rectangle":
                     figure = new OOPLab2.Figures.Rectangle(
-                        new OOPLab2.Figures.Point(int.Parse(AxInput.Text) + canvasLeft, int.Parse(AyInput.Text)),
+                        new OOPLab2.Figures.Point(int.Parse(AxInput.Text), int.Parse(AyInput.Text)),
                         int.Parse(WidthInput.Text), int.Parse(LengthInput.Text));
                     Canv.Children.Add(figure.Draw());
                     break;
                 case "Square":
                     figure = new OOPLab2.Figures.Square(
-                        new OOPLab2.Figures.Point(int.Parse(AxInput.Text) + canvasLeft, int.Parse(AyInput.Text)),
+                        new OOPLab2.Figures.Point(int.Parse(AxInput.Text), int.Parse(AyInput.Text)),
                         int.Parse(LengthInput.Text));
                     Canv.Children.Add(figure.Draw());
                     break;
                 case "Ellipse":
                     figure = new OOPLab2.Figures.Ellipse(
-                       new OOPLab2.Figures.Point(int.Parse(AxInput.Text) + canvasLeft, int.Parse(AyInput.Text)),
+                       new OOPLab2.Figures.Point(int.Parse(AxInput.Text), int.Parse(AyInput.Text)),
                        int.Parse(MinorAxisInput.Text), int.Parse(MajorAxisInput.Text));
                     Canv.Children.Add(figure.Draw());
                     break;
                 case "Circle":
                     figure = new OOPLab2.Figures.Circle(
-                        new OOPLab2.Figures.Point(int.Parse(AxInput.Text) + canvasLeft, int.Parse(AyInput.Text)),
+                        new OOPLab2.Figures.Point(int.Parse(AxInput.Text), int.Parse(AyInput.Text)),
                         int.Parse(RadiusInput.Text));
                     Canv.Children.Add(figure.Draw());
                     break;

@@ -32,7 +32,7 @@ namespace OOPLab2.Figures
             System.Windows.Shapes.Ellipse ellipse = new System.Windows.Shapes.Ellipse();
             ellipse.Width = MajorAxis * 2;
             ellipse.Height = MinorAxis * 2;
-            Canvas.SetLeft(ellipse, Center.x - MajorAxis);
+            Canvas.SetLeft(ellipse, Center.x - MajorAxis + canvasLeft);
             Canvas.SetTop(ellipse, Center.y - MinorAxis);
             ellipse.Stroke = Brushes.Black;
             return ellipse;

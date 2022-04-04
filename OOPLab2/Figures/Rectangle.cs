@@ -29,10 +29,10 @@ namespace OOPLab2.Figures
         public override Shape Draw()
         {
             Polygon rectangle = new Polygon();
-            System.Windows.Point Point1 = new System.Windows.Point(A.x, A.y);
-            System.Windows.Point Point2 = new System.Windows.Point(A.x + Width, A.y);
-            System.Windows.Point Point3 = new System.Windows.Point(A.x + Width, A.y + Length);
-            System.Windows.Point Point4 = new System.Windows.Point(A.x, A.y + Length);
+            System.Windows.Point Point1 = new System.Windows.Point(A.x + canvasLeft, A.y);
+            System.Windows.Point Point2 = new System.Windows.Point(A.x + canvasLeft + Width, A.y);
+            System.Windows.Point Point3 = new System.Windows.Point(A.x + canvasLeft + Width, A.y + Length);
+            System.Windows.Point Point4 = new System.Windows.Point(A.x + canvasLeft, A.y + Length);
             PointCollection points = new PointCollection();
             points.Add(Point1);
             points.Add(Point2);

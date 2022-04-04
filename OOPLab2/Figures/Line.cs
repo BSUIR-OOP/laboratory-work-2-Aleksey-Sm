@@ -25,9 +25,9 @@ namespace OOPLab2.Figures
         public override Shape Draw()
         {
             System.Windows.Shapes.Line line = new System.Windows.Shapes.Line();
-            line.X1 = A.x;
+            line.X1 = A.x + canvasLeft;
             line.Y1 = A.y;
-            line.X2 = B.x;
+            line.X2 = B.x + canvasLeft;
             line.Y2 = B.y;
             line.Stroke = Brushes.Red;
             return line;

@@ -24,9 +24,9 @@ namespace OOPLab2.Figures
         public override Shape Draw()
         {
             Polygon triang = new Polygon();
-            System.Windows.Point Point1 = new System.Windows.Point(A.x, A.y);
-            System.Windows.Point Point2 = new System.Windows.Point(B.x, B.y);
-            System.Windows.Point Point3 = new System.Windows.Point(C.x, C.y);
+            System.Windows.Point Point1 = new System.Windows.Point(A.x + canvasLeft, A.y);
+            System.Windows.Point Point2 = new System.Windows.Point(B.x + canvasLeft, B.y);
+            System.Windows.Point Point3 = new System.Windows.Point(C.x + canvasLeft, C.y);
             PointCollection points = new PointCollection();
             points.Add(Point1);
             points.Add(Point2);

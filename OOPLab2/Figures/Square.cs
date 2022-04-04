@@ -18,8 +18,6 @@ namespace OOPLab2.Figures
             => $"Square: A({A.x}, {A.y}); B({A.x + Width}, {A.y}); C({A.x + Width}, {A.y + Length}); D({A.x}, {A.y + Length});";
 
         public override System.Windows.Shapes.Shape Draw()
-        {
-            return base.Draw();
-        }
+            => base.Draw();
     }
 }
