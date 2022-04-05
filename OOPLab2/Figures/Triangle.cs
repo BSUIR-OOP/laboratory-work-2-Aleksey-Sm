@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Media;
+﻿using System.Windows.Media;
 using System.Windows.Shapes;
 
 namespace OOPLab2.Figures
 {
-    public class Triangle: Line
+    public class Triangle : Line
     {
         protected Point C { get; set; }
 
