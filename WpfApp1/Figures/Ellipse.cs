@@ -1,13 +1,10 @@
-﻿using System;
+﻿using OOPLab2.Drawing;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OOPLab2.Drawing;
 
 namespace OOPLab2.Figures
 {
-    public class Ellipse: BaseFigure
+    public class Ellipse : BaseFigure
     {
         protected Point Center { get; set; }
 
@@ -15,7 +12,7 @@ namespace OOPLab2.Figures
 
         protected int MinorAxsis { get; set; }
 
-        public Drawer drawer;
+        public override Drawer drawer { get; set; }
 
         public Ellipse(Point a, Point b)
         {

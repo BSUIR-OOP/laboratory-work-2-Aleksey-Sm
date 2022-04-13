@@ -1,19 +1,15 @@
-﻿using System;
+﻿using OOPLab2.Drawing;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OOPLab2.Drawing;
 
 namespace OOPLab2.Figures
 {
-    public class Rectangle: BaseFigure
+    public class Rectangle : BaseFigure
     {
         protected Point A { get; set; }
 
         protected Point B { get; set; }
 
-        public Drawer drawer;
+        public override Drawer drawer { get; set; }
 
         public Rectangle(Point a, Point b)
         {
@@ -23,7 +19,7 @@ namespace OOPLab2.Figures
         }
 
         public override List<Point> GetDots()
-            => new List<Point>() { A, new Point(B.x, A.y), B, new Point(A.x, B.y)};
+            => new List<Point>() { A, new Point(B.x, A.y), B, new Point(A.x, B.y) };
 
 
     }

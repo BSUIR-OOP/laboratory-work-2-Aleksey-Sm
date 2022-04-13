@@ -1,14 +1,11 @@
 ﻿using OOPLab2.Figures;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Media;
 
 namespace OOPLab2.Drawing
 {
-    public class EllipseDrawer: Drawer
+    public class EllipseDrawer : Drawer
     {
         public override List<PathFigure> Draw(List<Point> dots)
         {

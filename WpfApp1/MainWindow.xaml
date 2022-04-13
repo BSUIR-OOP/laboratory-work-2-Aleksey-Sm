@@ -6,6 +6,20 @@
         xmlns:local="clr-namespace:OOPLab2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Path x:Name="myPath" Stroke="Blue">
-    </Path>
+    <Grid MouseDown="myPath_MouseDown" MouseUp="myPath_MouseUp" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.05*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ComboBox Grid.Row="0" SelectedIndex="0" Width="100" x:Name="cbFigures">
+                <TextBlock>Line</TextBlock>
+                <TextBlock>Triangle</TextBlock>
+                <TextBlock>Rectangle</TextBlock>
+                <TextBlock>Circle</TextBlock>
+                <TextBlock>Ellipse</TextBlock>
+            </ComboBox>
+            <Path Grid.Row="1" x:Name="myPath" Stroke="Blue">
+
+            </Path>
+    </Grid>
 </Window>

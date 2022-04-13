@@ -1,13 +1,12 @@
-﻿using System;
+﻿using OOPLab2.Drawing;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOPLab2.Figures
 {
     public abstract class BaseFigure
     {
+        public abstract Drawer drawer { get; set; }
+
         public abstract List<Point> GetDots();
     }
 }

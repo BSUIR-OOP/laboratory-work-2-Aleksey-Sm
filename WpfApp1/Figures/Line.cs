@@ -1,18 +1,14 @@
-﻿using System;
+﻿using OOPLab2.Drawing;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OOPLab2.Drawing;
 
 namespace OOPLab2.Figures
 {
-    public class Line: BaseFigure
+    public class Line : BaseFigure
     {
         protected Point A { get; set; }
         protected Point B { get; set; }
 
-        public Drawer drawer;
+        public override Drawer drawer { get; set; }
 
         public Line(Point a, Point b)
         {
