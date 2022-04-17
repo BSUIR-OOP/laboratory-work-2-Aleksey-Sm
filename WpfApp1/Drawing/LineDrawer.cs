@@ -6,9 +6,9 @@ namespace OOPLab2.Drawing
 {
     public class LineDrawer : Drawer
     {
-        public override List<PathFigure> Draw(List<Point> dots)
+        public override PathFigureCollection Draw(List<Point> dots)
         {
-            List<PathFigure> result = new List<PathFigure>();
+            PathFigureCollection result = new PathFigureCollection();
             PathFigure f;
             LineSegment line;
             for (int i = 0; i < dots.Count - 1; i++)

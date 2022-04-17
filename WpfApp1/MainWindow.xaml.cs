@@ -35,11 +35,10 @@ namespace OOPLab2
         {
             var endPosition = e.GetPosition(myPath);
             endMousePosition = new Figures.Point((int)endPosition.X, (int)endPosition.Y);
-            FigureCollection figuresCollection = new FigureCollection(initialMousePosition, endMousePosition);
-            figure = figuresCollection.GetFigure(cbFigures.SelectedIndex);
-            List<PathFigure> pathFigureList = new List<PathFigure>(figure.drawer.Draw(figure.GetDots()));
-            foreach (var f in pathFigureList)
-                figureCollection.Add(f);
+            figure = FigureCollection.GetFigure(cbFigures.SelectedIndex, initialMousePosition, endMousePosition);
+            PathFigureCollection newFigure = new PathFigureCollection(figure.drawer.Draw(figure.GetDots()));
+            foreach (var p in newFigure)
+                figureCollection.Add(p);
             pathGeom.Figures = figureCollection;
             myPath.Data = pathGeom;
         }

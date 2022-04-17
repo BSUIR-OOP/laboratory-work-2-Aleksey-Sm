@@ -6,6 +6,6 @@ namespace OOPLab2.Drawing
 {
     public abstract class Drawer
     {
-        public abstract List<PathFigure> Draw(List<Point> dots);
+        public abstract PathFigureCollection Draw(List<Point> dots);
     }
 }
